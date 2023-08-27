@@ -40,4 +40,13 @@
    - NOW() / SYSDATE
    - IF / DECODE
    - DATE_FORMAT, TO_CHAR
-   - 
+   - SUBSTRING / SUBSTR 등
+  
+4. Mysql SWOT 분석
+
+   - S : 오픈소스(무료), 경량
+   - W : 조인알고리즘 부족
+   - O : 스토리지 엔진 확장성
+   - T :  Mysql 라이선스 정책 (오라클에 인수되었으므로 유료화가능성) / MARIADB는 괜찮 ^^
+  
+### 2장. SQL 튜닝용어를 직관적으로 이해하기
