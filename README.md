@@ -18,6 +18,7 @@
    - 보통 마스터에서는 INSERT, UPDATE, DELETE 슬레이브에서는 SELECT 만 처리하는 식으로 이중화한다.   
    ```
    * 쿼리 오프로딩
+   
    - DB서버의 트랜잭션에서 쓰기와 읽기를 각각분리하여 DB 처리량을 늘리는 성능향상 기법
    - 쓰기 트랜잭션 : UPDATE, INSERT, DELETE
    - 읽기 트랜잭션 : SELECT 
