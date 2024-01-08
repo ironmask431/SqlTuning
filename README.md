@@ -164,15 +164,15 @@
 
    1. 서브쿼리 위치에 따른 SQL 용어
 
-   ```
-      select (select ... from ...)  -> 스칼라 서브쿼리 
-      from (select ... from ...) -> 인라인뷰
-      where 컬럼명 in (select ... from ...) -> 중첩 서브쿼리
-   ```
-      
-      1.  스칼라 서브쿼리 : select 절에서 사용되는 서브쿼리
+      1. 스칼라 서브쿼리 : select 절에서 사용되는 서브쿼리
       2. 인라인 뷰 : FROM 절에서 사용되는 서브쿼리. 내부적으로 메모리 또는 디스크에 임시테이블 생성하여 구현됨
       3. 중첩 서브쿼리 : WHERE절에서 사용되는 서브쿼리
+
+         ```
+            select (select ... from ...)  -> 스칼라 서브쿼리 
+            from (select ... from ...) -> 인라인뷰
+            where 컬럼명 in (select ... from ...) -> 중첩 서브쿼리
+         ```
 
    2. 메인쿼리와의 관계성에 따른 SQL 용어
 
